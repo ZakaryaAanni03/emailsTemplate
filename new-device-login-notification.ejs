@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Login Notification</title>
+  </head>
+  <body>
+    <h2>New Login Notification</h2>
+    <p>Hello <%= user.name %>,</p>
+    <p>We noticed a new login to your account from a new device.</p>
+    <p>
+      If this was you, you can ignore this email. Otherwise, please take action immediately by
+      contacting us.
+    </p>
+    <p>
+      If you didn't perform this action, we recommend changing your password and reviewing your
+      account security settings.
+    </p>
+    <p>Device Information:</p>
+    <ul>
+      <li><strong>Device Type:</strong> <%= device.type %></li>
+      <li><strong>Device Name:</strong> <%= device.name %></li>
+      <li><strong>Location:</strong> <%= device.location %></li>
+      <li><strong>IP Address:</strong> <%= device.ip %></li>
+    </ul>
+    <p>If you have any questions or concerns, feel free to contact us.</p>
+    <p>Regards,</p>
+    <p>CozyTrip</p>
+  </body>
+</html>

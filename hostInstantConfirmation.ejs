@@ -1,0 +1,882 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" lang="en">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <style>
+      @font-face {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        mso-font-alt: 'Verdana';
+        src: url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap)
+          format('woff2');
+      }
+
+      * {
+        font-family: 'Poppins', Verdana;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table
+      align="center"
+      width="100%"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      role="presentation"
+      style="max-width: 600px; margin: auto"
+    >
+      <tbody>
+        <tr>
+          <td>
+            <table
+              align="center"
+              width="100%"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              role="presentation"
+              style="
+                margin-left: 2.5rem;
+                margin-bottom: 2rem;
+                margin-top: 2.5rem;
+                margin-right: 2.5rem;
+              "
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/Logo.png"
+                      style="
+                        display: block;
+                        outline: none;
+                        border: none;
+                        text-decoration: none;
+                        width: 104px;
+                      "
+                    />
+                    <p
+                      style="
+                        font-size: 30px;
+                        line-height: 124%;
+                        margin: 0px;
+                        font-weight: 700;
+                        margin-top: 2rem;
+                        max-width: 519px;
+                      "
+                    >
+                      Nouvelle réservation confirmée pour votre hébergement !
+                    </p>
+                    <h1
+                      style="
+                        font-size: 28px;
+                        font-weight: 700;
+                        margin-bottom: 0px;
+                        margin-top: 32px;
+                      "
+                    >
+                      Bonjour <%= data.first_name %>,
+                    </h1>
+                    <p
+                      style="
+                        font-size: 1.125rem;
+                        line-height: 1.75rem;
+                        margin: 16px 0;
+                        margin-top: 0.5rem;
+                        max-width: 515px;
+                        margin-bottom: 48px;
+                      "
+                    >
+                      Nous sommes heureux de vous informer que vous avez une nouvelle réservation
+                      confirmée instantanément !
+                    </p>
+                    <table
+                      align="center"
+                      width="100%"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      role="presentation"
+                      style="width: 520px; margin: 0px; max-width: 100%"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <img
+                              src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/email_instant_confirmation.png"
+                              style="
+                                display: block;
+                                outline: none;
+                                border: none;
+                                text-decoration: none;
+                                border-radius: 0.75rem;
+                              "
+                            />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      align="center"
+                      width="100%"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      role="presentation"
+                      style="margin: 0px; padding: 0px"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <table
+                              align="center"
+                              width="100%"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              role="presentation"
+                              style="
+                                margin-top: 46px;
+                                margin-bottom: 0px;
+                                margin-left: 0px;
+                                margin-right: 0px;
+                                max-width: 520px;
+                              "
+                            >
+                              <tbody style="width: 100%">
+                                <tr style="width: 100%">
+                                  <td class="" data-id="__react-email-column">
+                                    <h1
+                                      style="
+                                        font-size: 28px;
+                                        margin-bottom: 0px;
+                                        margin-top: 0px;
+                                        margin: 0px;
+                                      "
+                                    >
+                                      <%= data.title %>
+                                    </h1>
+                                    <p
+                                      style="
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        margin: 16px 0;
+                                        font-family: Inter, sans-serif;
+                                        font-weight: 400;
+                                        margin-top: 8px;
+                                        margin-bottom: 0px;
+                                        color: #777777;
+                                      "
+                                    >
+                                      <%= data.address %>, <%= data.first_name %>
+                                    </p>
+                                  </td>
+                                  <td data-id="__react-email-column" style="margin-left: 2.5rem">
+                                    <img
+                                      src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/sign.png"
+                                      style="
+                                        display: block;
+                                        outline: none;
+                                        border: none;
+                                        text-decoration: none;
+                                      "
+                                    />
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      align="center"
+                      width="100%"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      role="presentation"
+                      style="margin-top: 64px"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <h1 style="margin: 0px; font-size: 28px">Voyageur</h1>
+                            <table
+                              align="center"
+                              width="100%"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              role="presentation"
+                              style="margin-top: 0.5rem; margin-bottom: 0px"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <p
+                                      style="
+                                        font-size: 1rem;
+                                        line-height: 1.5rem;
+                                        margin: 0px;
+                                        color: rgb(102, 102, 102);
+                                      "
+                                    >
+                                      <%= data.traveller_name %>
+                                    </p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <hr
+              style="
+                width: 100%;
+                border: none;
+                border-top: 1px solid #eaeaea;
+                max-width: 520px;
+                height: 1px;
+                background-color: rgb(204, 204, 204);
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+              "
+            />
+            <table
+              align="center"
+              width="100%"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              role="presentation"
+              style="max-width: 520px"
+            >
+              <tbody>
+                <tr style="width: 100%">
+                  <td>
+                    <h1 style="font-family: Inter, sans-serif; font-size: 28px; font-weight: 700">
+                      Dates du séjour
+                    </h1>
+                    <table
+                      align="center"
+                      width="100%"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      role="presentation"
+                      style="width: 100%; margin: 0"
+                    >
+                      <tbody style="width: 100%">
+                        <tr style="width: 100%">
+                          <td
+                            data-id="__react-email-column"
+                            style="
+                              border: 1px solid #cccccc;
+                              border-radius: 8px;
+                              margin-right: 40px;
+                              max-height: 131px;
+                              width: 200px;
+                            "
+                          >
+                            <table
+                              align="center"
+                              width="100%"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              role="presentation"
+                              style="border-bottom: 1px solid #cccccc"
+                            >
+                              <tbody style="width: 100%">
+                                <tr style="width: 100%">
+                                  <td class="" data-id="__react-email-column">
+                                    <p
+                                      style="
+                                        font-size: 17px;
+                                        line-height: 24px;
+                                        margin: 16px 0;
+                                        font-weight: 600;
+                                        color: #333333;
+                                        margin-top: 8px;
+                                        margin-bottom: 10px;
+                                        padding-left: 12px;
+                                      "
+                                    >
+                                      <span>Arrivée :</span>
+                                    </p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              align="center"
+                              width="100%"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              role="presentation"
+                            >
+                              <tbody style="width: 100%">
+                                <tr style="width: 100%">
+                                  <p
+                                    style="
+                                      font-size: 14px;
+                                      line-height: 24px;
+                                      margin: 16px 0;
+                                      font-weight: 600;
+                                      padding-left: 16px;
+                                      margin-bottom: 0px;
+                                    "
+                                  >
+                                    <%= data.day_from %>
+                                  </p>
+                                  <p
+                                    style="
+                                      font-size: 14px;
+                                      line-height: 24px;
+                                      margin: 16px 0;
+                                      padding-left: 16px;
+                                      margin-top: 8px;
+                                      margin-bottom: 16px;
+                                    "
+                                  >
+                                    <%= data.date_from %>
+                                  </p>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td data-id="__react-email-column" style="color: white"></td>
+                          <td
+                            data-id="__react-email-column"
+                            style="
+                              border: 1px solid #cccccc;
+                              border-radius: 8px;
+                              margin-left: 50px;
+                              max-height: 131px;
+                              width: 200px;
+                            "
+                          >
+                            <table
+                              align="center"
+                              width="100%"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              role="presentation"
+                              style="border-bottom: 1px solid #cccccc"
+                            >
+                              <tbody style="width: 100%">
+                               Départ
+                              </tbody>
+                            </table>
+                            <table
+                              align="center"
+                              width="100%"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              role="presentation"
+                            >
+                              <tbody style="width: 100%">
+                                <tr style="width: 100%">
+                                  <p
+                                    style="
+                                      font-size: 14px;
+                                      line-height: 24px;
+                                      margin: 16px 0;
+                                      font-weight: 600;
+                                      padding-left: 16px;
+                                      margin-bottom: 0px;
+                                    "
+                                  >
+                                    <%= data.day_to %>
+                                  </p>
+                                  <p
+                                    style="
+                                      font-size: 14px;
+                                      line-height: 24px;
+                                      margin: 16px 0;
+                                      padding-left: 16px;
+                                      margin-top: 8px;
+                                      margin-bottom: 16px;
+                                    "
+                                  >
+                                    <%= data.date_to %>
+                                  </p>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <hr
+              style="
+                width: 100%;
+                border: none;
+                border-top: 1px solid #eaeaea;
+                max-width: 520px;
+                height: 1px;
+                background-color: rgb(204, 204, 204);
+                margin-top: 32px;
+                margin-bottom: 32px;
+              "
+            />
+            <p
+              style="
+                font-size: 14px;
+                line-height: 24px;
+                margin: 16px 0;
+                max-width: 520px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            >
+              Pour Consulter les détails complets de votre réservation, cliquez sur le lien
+              ci-dessous :
+            </p>
+            <hr
+              style="
+                width: 100%;
+                border: none;
+                border-top: 1px solid #eaeaea;
+                max-width: 520px;
+                height: 1px;
+                background-color: rgb(204, 204, 204);
+                margin-top: 32px;
+                margin-bottom: 32px;
+              "
+            />
+            <a
+              href="<%= url %>"
+              style="
+                line-height: 1.75rem;
+                text-decoration: none;
+                display: inline-block;
+                max-width: 520px;
+                background-color: rgb(98, 31, 255);
+                margin-top: 0px;
+                margin-bottom: 0px;
+                width: 100%;
+                text-align: center;
+                font-weight: 700;
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+                border-radius: 0.75rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                color: rgb(255, 255, 255);
+                font-size: 1.125rem;
+                padding: 16px 0px 16px 0px;
+              "
+              target="_blank"
+              ><span
+                ><!--[if mso
+                  ]><i style="letter-spacing: 0px; mso-font-width: -100%; mso-text-raise: 24" hidden
+                    >&nbsp;</i
+                  ><!
+                [endif]--></span
+              ><span
+                style="
+                  max-width: 100%;
+                  display: inline-block;
+                  line-height: 120%;
+                  mso-padding-alt: 0px;
+                  mso-text-raise: 12px;
+                "
+                >Voir la réservation</span
+              ><span
+                ><!--[if mso
+                  ]><i style="letter-spacing: 0px; mso-font-width: -100%" hidden>&nbsp;</i><!
+                [endif]--></span
+              ></a
+            >
+            <hr
+              style="
+                width: 100%;
+                border: none;
+                border-top: 1px solid #eaeaea;
+                max-width: 520px;
+                height: 1px;
+                background-color: rgb(204, 204, 204);
+                margin-top: 32px;
+                margin-bottom: 64px;
+              "
+            />
+            <h1
+              style="
+                font-size: 28px;
+                max-width: 520px;
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+                font-weight: 700;
+              "
+            >
+              Que faire ensuite?
+            </h1>
+            <h1
+              style="
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+                font-weight: 600;
+                max-width: 520px;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+              "
+            >
+              1. Communiquez avec votre voyageur :
+            </h1>
+            <p
+              style="
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+                margin: 16px 0;
+                color: rgb(119, 119, 119);
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+                margin-top: 0px;
+                margin-bottom: 0px;
+              "
+            >
+              Utilisez notre messagerie intégrée pour répondre à toute question et organiser les
+              détails de l&#x27;arrivée.
+            </p>
+            <h1
+              style="
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+                font-weight: 600;
+                max-width: 520px;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+              "
+            >
+              2. Préparez votre hébergement :
+            </h1>
+            <p
+              style="
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+                margin: 16px 0;
+                color: rgb(119, 119, 119);
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+                margin-top: 0px;
+                margin-bottom: 0px;
+              "
+            >
+              Assurez-vous que tout est en ordre pour accueillir vos invités.
+            </p>
+            <h1
+              style="
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+                font-weight: 600;
+                max-width: 520px;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+              "
+            >
+              3. Accueillez vos invités :
+            </h1>
+            <p
+              style="
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+                margin: 16px 0;
+                color: rgb(119, 119, 119);
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+                margin-top: 0px;
+                margin-bottom: 0px;
+              "
+            >
+              Faites de leur séjour une expérience mémorable.
+            </p>
+            <table
+              align="center"
+              width="100%"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              role="presentation"
+              style="
+                background-color: rgb(250, 250, 250);
+                max-width: 520px;
+                padding-top: 36px;
+                margin-top: 60px;
+                padding-left: 2.5rem;
+                padding-right: 2.5rem;
+              "
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <h1
+                      style="
+                        font-size: 1.25rem;
+                        line-height: 1.75rem;
+                        font-weight: 700;
+                        text-align: center;
+                      "
+                    >
+                      Besoin d&#x27;aide ?
+                    </h1>
+                    <table
+                      align="center"
+                      width="100%"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      role="presentation"
+                      style="color: rgb(51, 51, 51)"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <p
+                              style="
+                                font-size: 0.875rem;
+                                line-height: 1.25rem;
+                                margin: 16px 0;
+                                margin-top: 0.5rem;
+                                text-align: center;
+                              "
+                            >
+                              Si vous avez des questions ou des préoccupations, notre équipe de
+                              support est là pour vous aider. Contactez-nous à <span
+                                style="color: rgb(254, 124, 72); font-weight: 600"
+                                >support@cozytrip.com</span
+                              >.
+                            </p>
+                            <p
+                              style="
+                                font-size: 0.875rem;
+                                line-height: 1.25rem;
+                                margin: 16px 0;
+                                margin-top: 1.25rem;
+                                text-align: center;
+                                margin-left: auto;
+                                margin-right: auto;
+                                max-width: 448px;
+                              "
+                            >
+                              Merci d&#x27;avoir choisi Cozytrip pour accueillir des voyageurs. Nous
+                              vous souhaitons une excellente collaboration !
+                            </p>
+                            <hr
+                              style="
+                                width: 100%;
+                                border: none;
+                                border-top: 1px solid #eaeaea;
+                                max-width: 292px;
+                                height: 1px;
+                                background-color: rgb(204, 204, 204);
+                                margin-top: 1.25rem;
+                                margin-bottom: 1.25rem;
+                              "
+                            />
+                            <p
+                              style="
+                                font-size: 0.875rem;
+                                line-height: 1.25rem;
+                                margin: 16px 0;
+                                margin-top: 1.25rem;
+                                text-align: center;
+                              "
+                            >
+                              <b>Note</b> : Cet e-mail est une notification automatique. Veuillez ne
+                              pas y répondre directement.
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      align="center"
+                      width="100%"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      role="presentation"
+                      style="max-width: 160px; margin: 0 auto; padding-bottom: 80px"
+                    >
+                      <tbody>
+                        <tr style="width: 100%">
+                          <td>
+                            <a
+                              href="#"
+                              style="
+                                line-height: 100%;
+                                text-decoration: none;
+                                display: inline-block;
+                                max-width: 100%;
+                                margin-left: 40px;
+                                padding: 0px 0px 0px 0px;
+                              "
+                              target="_blank"
+                              ><span
+                                ><!--[if mso
+                                  ]><i
+                                    style="
+                                      letter-spacing: 0px;
+                                      mso-font-width: -100%;
+                                      mso-text-raise: 0;
+                                    "
+                                    hidden
+                                    >&nbsp;</i
+                                  ><!
+                                [endif]--></span
+                              ><span
+                                style="
+                                  max-width: 100%;
+                                  display: inline-block;
+                                  line-height: 120%;
+                                  mso-padding-alt: 0px;
+                                  mso-text-raise: 0;
+                                "
+                                ><img
+                                  src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/facebook.png"
+                                  style="
+                                    display: block;
+                                    outline: none;
+                                    border: none;
+                                    text-decoration: none;
+                                  " /></span
+                              ><span
+                                ><!--[if mso
+                                  ]><i style="letter-spacing: 0px; mso-font-width: -100%" hidden
+                                    >&nbsp;</i
+                                  ><!
+                                [endif]--></span
+                              ></a
+                            ><a
+                              href="#"
+                              style="
+                                line-height: 100%;
+                                text-decoration: none;
+                                display: inline-block;
+                                max-width: 100%;
+                                margin-left: 20px;
+                                padding: 0px 0px 0px 0px;
+                              "
+                              target="_blank"
+                              ><span
+                                ><!--[if mso
+                                  ]><i
+                                    style="
+                                      letter-spacing: 0px;
+                                      mso-font-width: -100%;
+                                      mso-text-raise: 0;
+                                    "
+                                    hidden
+                                    >&nbsp;</i
+                                  ><!
+                                [endif]--></span
+                              ><span
+                                style="
+                                  max-width: 100%;
+                                  display: inline-block;
+                                  line-height: 120%;
+                                  mso-padding-alt: 0px;
+                                  mso-text-raise: 0;
+                                "
+                                ><img
+                                  src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/instagram.png"
+                                  style="
+                                    display: block;
+                                    outline: none;
+                                    border: none;
+                                    text-decoration: none;
+                                  " /></span
+                              ><span
+                                ><!--[if mso
+                                  ]><i style="letter-spacing: 0px; mso-font-width: -100%" hidden
+                                    >&nbsp;</i
+                                  ><!
+                                [endif]--></span
+                              ></a
+                            ><a
+                              href="#"
+                              style="
+                                line-height: 100%;
+                                text-decoration: none;
+                                display: inline-block;
+                                max-width: 100%;
+                                margin-left: 20px;
+                                padding: 0px 0px 0px 0px;
+                              "
+                              target="_blank"
+                              ><span
+                                ><!--[if mso
+                                  ]><i
+                                    style="
+                                      letter-spacing: 0px;
+                                      mso-font-width: -100%;
+                                      mso-text-raise: 0;
+                                    "
+                                    hidden
+                                    >&nbsp;</i
+                                  ><!
+                                [endif]--></span
+                              ><span
+                                style="
+                                  max-width: 100%;
+                                  display: inline-block;
+                                  line-height: 120%;
+                                  mso-padding-alt: 0px;
+                                  mso-text-raise: 0;
+                                "
+                                ><img
+                                  src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/x.png"
+                                  style="
+                                    display: block;
+                                    outline: none;
+                                    border: none;
+                                    text-decoration: none;
+                                  " /></span
+                              ><span
+                                ><!--[if mso
+                                  ]><i style="letter-spacing: 0px; mso-font-width: -100%" hidden
+                                    >&nbsp;</i
+                                  ><!
+                                [endif]--></span
+                              ></a
+                            >
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

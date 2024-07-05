@@ -1,0 +1,623 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" lang="en">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <style>
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        mso-font-alt: "Verdana";
+        src: url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap)
+          format("woff2");
+      }
+
+      * {
+        font-family: "Poppins", Verdana;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table
+      align="center"
+      width="100%"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      role="presentation"
+      style="max-width: 600px; margin: auto"
+    >
+      <tbody>
+        <tr>
+          <td>
+            <table
+              align="center"
+              width="100%"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              role="presentation"
+              style="
+                margin-left: 2.5rem;
+                margin-bottom: 2rem;
+                margin-top: 2.5rem;
+                margin-right: 2.5rem;
+              "
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/Logo.png"
+                      style="
+                        display: block;
+                        outline: none;
+                        border: none;
+                        text-decoration: none;
+                        width: 112px;
+                      "
+                    />
+                    <p
+                      style="
+                        font-size: 30px;
+                        line-height: 124%;
+                        margin: 32px 0;
+                        font-weight: 700;
+                        max-width: 519px;
+                      "
+                    >
+                      Partagez Votre Expérience sur Cozytrip
+                    </p>
+                    <table
+                      align="center"
+                      width="100%"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      role="presentation"
+                      style="width: 520px; margin: 0px; max-width: 100%"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <img
+                              class="header"
+                              src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/invitationVoyage.png"
+                              style="
+                                display: block;
+                                outline: none;
+                                border: none;
+                                text-decoration: none;
+                              "
+                            />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <h1
+                      style="
+                        font-size: 28px;
+                        margin-bottom: 0px;
+                        margin-top: 46px;
+                      "
+                    >
+                      Cher/Chère <%= data.first_name %> <%= data.last_name %>
+                    </h1>
+                    <p
+                      style="
+                        font-size: 1.125rem;
+                        line-height: 1.75rem;
+                        margin: 16px 0;
+                        max-width: 515px;
+                        margin-bottom: 0px;
+                      "
+                    >
+                      Nous espérons que vous avez passé un excellent séjour dans
+                      le logement <b><%= data.title %></b> réservé via
+                      Cozytrip. Votre opinion est très importante pour nous et
+                      pour notre communauté.
+                    </p>
+                    <table
+                      align="center"
+                      width="100%"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      role="presentation"
+                      style="margin-top: 46px"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <h1
+                              style="
+                                font-size: 28px;
+                                margin-bottom: 0px;
+                                margin-top: 0px;
+                              "
+                            >
+                              Nom de l'hébergement
+                            </h1>
+                            <p
+                              style="
+                                font-size: 14px;
+                                line-height: 24px;
+                                margin: 16px 0;
+                                color: rgb(102, 102, 102);
+                                margin-top: 0.5rem;
+                              "
+                            >
+                              <%= data.title %>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      align="center"
+                      width="100%"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      role="presentation"
+                      style="margin-top: 64px"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <h1 style="margin: 0px; font-size: 28px">
+                              Dates du séjour
+                            </h1>
+                            <table
+                              align="center"
+                              width="100%"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              role="presentation"
+                              style="margin-top: 0.5rem; margin-bottom: 0px"
+                            >
+                              <tbody style="width: 100%">
+                                <tr style="width: 100%">
+                                  <td data-id="__react-email-column">
+                                    <p
+                                      style="
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                        margin: 0px;
+                                        color: rgb(102, 102, 102);
+                                      "
+                                    >
+                                      <%= data.day_from %>
+                                    </p>
+                                    <p
+                                      style="
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                        margin: 0px;
+                                        color: rgb(102, 102, 102);
+                                      "
+                                    >
+                                      <%= data.date_from %>
+                                    </p>
+                                  </td>
+                                  <td
+                                    style="
+                                      margin-left: 2rem;
+                                      padding-left: 2rem;
+                                    "
+                                    data-id="__react-email-column"
+                                  >
+                                    <p
+                                      style="
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                        margin: 0px;
+                                        color: rgb(102, 102, 102);
+                                      "
+                                    >
+                                      <%= data.day_to %>
+                                    </p>
+                                    <p
+                                      style="
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                        margin: 0px;
+                                        color: rgb(102, 102, 102);
+                                      "
+                                    >
+                                      <%= data.date_to %>
+                                    </p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table
+              align="center"
+              width="100%"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              role="presentation"
+              style="margin: 2.5rem"
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-size: 1.125rem;
+                        line-height: 1.75rem;
+                        margin: 0px;
+                        max-width: 520px;
+                        width: 100%;
+                        font-weight: semibold;
+                      "
+                    >
+                      Nous vous invitons à partager votre expérience en laissant
+                      un commentaire. Vos retours aident les futurs voyageurs à
+                      faire des choix éclairés et permettent aux hôtes
+                      d'améliorer leurs services.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+              <hr
+                style="
+                  width: 100%;
+                  border: none;
+                  border-top: 1px solid #eaeaea;
+                  max-width: 520px;
+                  height: 1px;
+                  background-color: rgb(204, 204, 204);
+                  margin-top: 1.25rem;
+                  margin-bottom: 1.25rem;
+                "
+              />
+            </table>
+            <table
+              align="center"
+              width="100%"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              role="presentation"
+              style="margin: 2.5rem"
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-size: 1.125rem;
+                        line-height: 1.75rem;
+                        margin: 0px;
+                        max-width: 520px;
+                        width: 100%;
+                      "
+                    >
+                      Nous espérons que vous avez passé un excellent séjour dans
+                      le logement <%= data.title %> réservé
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+              <hr
+                style="
+                  width: 100%;
+                  border: none;
+                  border-top: 1px solid #eaeaea;
+                  max-width: 520px;
+                  height: 1px;
+                  background-color: rgb(204, 204, 204);
+                  margin-top: 1.25rem;
+                  margin-bottom: 1.25rem;
+                "
+              />
+            </table>
+            <hr
+              style="
+                width: 100%;
+                border: none;
+                border-top: 1px solid #eaeaea;
+                max-width: 520px;
+                height: 1px;
+                background-color: rgb(204, 204, 204);
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+              "
+            />
+            <a
+              style="
+                line-height: 1.75rem;
+                text-decoration: none;
+                display: inline-block;
+                max-width: 520px;
+                background-color: rgb(98, 31, 255);
+                margin-top: 0px;
+                margin-bottom: 0px;
+                width: 100%;
+                text-align: center;
+                font-weight: 700;
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+                border-radius: 0.75rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                color: rgb(255, 255, 255);
+                font-size: 1.125rem;
+                padding: 16px 0px 16px 0px;
+              "
+              target="_blank"
+              href="<%= url %>"
+              ><span></span
+              ><span
+                style="
+                  max-width: 100%;
+                  display: inline-block;
+                  line-height: 120%;
+                  mso-padding-alt: 0px;
+                  mso-text-raise: 12px;
+                "
+                >laisser un commentaire</span
+              ><span></span
+            ></a>
+            <hr
+              style="
+                width: 100%;
+                border: none;
+                border-top: 1px solid #eaeaea;
+                max-width: 520px;
+                height: 1px;
+                background-color: rgb(204, 204, 204);
+                margin-top: 1.25rem;
+                margin-bottom: 1.25rem;
+              "
+            />
+            <table
+              align="center"
+              width="100%"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              role="presentation"
+              style="margin-left: 2.5rem; margin-right: 2.5rem"
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <h1
+                      style="
+                        font-size: 1.125rem;
+                        line-height: 1.75rem;
+                        font-weight: 600;
+                      "
+                    >
+                      Quelques points que vous pourriez mentionner
+                    </h1>
+                    <p
+                      style="
+                        font-size: 1.125rem;
+                        line-height: 1.75rem;
+                        margin: 0px;
+                        color: rgb(51, 51, 51);
+                      "
+                    >
+                      - La proprieté et le confort du logement
+                    </p>
+                    <p
+                      style="
+                        font-size: 1.125rem;
+                        line-height: 1.75rem;
+                        margin: 0px;
+                        color: rgb(51, 51, 51);
+                      "
+                    >
+                      - L'accueil et la communication avec l'hôte
+                    </p>
+                    <p
+                      style="
+                        font-size: 1.125rem;
+                        line-height: 1.75rem;
+                        margin: 0px;
+                        color: rgb(51, 51, 51);
+                      "
+                    >
+                      - L'exactitude de la description et des photos
+                    </p>
+                    <p
+                      style="
+                        font-size: 1.125rem;
+                        line-height: 1.75rem;
+                        margin: 0px;
+                        color: rgb(51, 51, 51);
+                      "
+                    >
+                      - Les équipements et services disponibles
+                    </p>
+                    <h1
+                      style="
+                        font-size: 1.125rem;
+                        line-height: 1.75rem;
+                        font-weight: 600;
+                        max-width: 520px;
+                        margin-top: 1rem;
+                        margin-bottom: 60px;
+                      "
+                    >
+                      Merci d&#x27;avance pour votre temps et vos précieux
+                      retours.
+                    </h1>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table
+              align="center"
+              width="100%"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              role="presentation"
+              style="
+                background-color: rgb(250, 250, 250);
+                padding-top: 36px;
+                padding-left: 2.5rem;
+                padding-right: 2.5rem;
+              "
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <table
+                      align="center"
+                      width="100%"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      role="presentation"
+                      style="display: inline"
+                    >
+                      <tbody style="width: 100%">
+                        <tr style="width: 100%; vertical-align: center">
+                          <td data-id="__react-email-column">
+                            <img
+                              src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/Logo.png"
+                              style="
+                                display: inline;
+                                outline: none;
+                                border: none;
+                                text-decoration: none;
+                                width: 112px;
+                              "
+                            />
+                          </td>
+                          <td
+                            data-id="__react-email-column"
+                            style="display: inline; margin-left: 16rem"
+                          >
+                            <a
+                              style="color: #067df7; text-decoration: none"
+                              target="_blank"
+                              href="#"
+                              ><img
+                                src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/facebook.png"
+                                style="
+                                  display: inline;
+                                  outline: none;
+                                  border: none;
+                                  text-decoration: none;
+                                " /></a
+                            ><a
+                              style="color: #067df7; text-decoration: none"
+                              target="_blank"
+                              href="#"
+                              ><img
+                                src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/instagram.png"
+                                style="
+                                  display: inline;
+                                  outline: none;
+                                  border: none;
+                                  text-decoration: none;
+                                  margin-left: 0.5rem;
+                                " /></a
+                            ><a
+                              style="color: #067df7; text-decoration: none"
+                              target="_blank"
+                              href="#"
+                              ><img
+                                src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/x.png"
+                                style="
+                                  display: inline;
+                                  outline: none;
+                                  border: none;
+                                  text-decoration: none;
+                                  margin-left: 0.5rem;
+                                "
+                            /></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      align="center"
+                      width="100%"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      role="presentation"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <p
+                              style="
+                                font-size: 0.875rem;
+                                line-height: 1.25rem;
+                                margin: 16px 0;
+                                margin-top: 46px;
+                                text-align: center;
+                              "
+                            >
+                              Vous rencontrez des problèmes ? Si vous avez des
+                              questions ou avez besoin d&#x27;aide,
+                              n&#x27;hésitez pas à contacter notre service
+                              clientèle à <span
+                                style="
+                                  color: rgb(254, 124, 72);
+                                  font-weight: bold;
+                                "
+                                >support@cozytrip.com</span
+                              > ou via notre site Web.
+                            </p>
+                            <p
+                              style="
+                                font-size: 0.875rem;
+                                line-height: 1.25rem;
+                                margin: 16px 0;
+                                margin-top: 46px;
+                                text-align: center;
+                              "
+                            >
+                              Nous avons hâte de vous accompagner dans vos
+                              prochaines aventures ! Cordialement,
+                              <b>L'équipe Cozytrip</b>
+                            </p>
+                            <p
+                              style="
+                                font-size: 0.875rem;
+                                line-height: 1.25rem;
+                                text-align: center;
+                                max-width: 377px;
+                                margin: 40px auto;
+                              "
+                            >
+                              <b>Note</b> : Cet e-mail est une notification
+                              automatique. Veuillez ne pas y répondre
+                              directement.
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

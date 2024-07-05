@@ -1,0 +1,714 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" lang="en">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <style>
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        mso-font-alt: "Inter";
+        src: url(https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/Poppins-Bold.ttf)
+          format("ttf");
+      }
+
+      * {
+        font-family: "Poppins", Inter;
+      }
+    </style>
+    <style>
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        mso-font-alt: "Verdana";
+        src: url(https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/Poppins-SemiBold.ttf)
+          format("ttf");
+      }
+
+      * {
+        font-family: "Poppins", Verdana;
+      }
+    </style>
+    <style>
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        mso-font-alt: "Verdana";
+        src: url(https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/Poppins-Regular.ttf)
+          format("ttf");
+      }
+
+      * {
+        font-family: "Poppins", Verdana;
+      }
+    </style>
+  </head>
+
+  <body
+    style="
+      width: 100%;
+      margin: 26px auto 0px auto;
+      max-width: 600px;
+      padding-right: 40px;
+      padding-left: 40px;
+    "
+  >
+    <table
+      align="center"
+      width="100%"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      role="presentation"
+      style="max-width: 192px"
+    >
+      <tbody>
+        <tr style="width: 100%">
+          <td>
+            <img
+              src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/Logo.png"
+              style="
+                display: block;
+                outline: none;
+                border: none;
+                text-decoration: none;
+              "
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table
+      align="center"
+      width="100%"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      role="presentation"
+      style="
+        max-width: 600px;
+        padding-right: 48px;
+        padding-left: 48px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding-top: 60px;
+        margin-top: 60px;
+      "
+    >
+      <tbody>
+        <tr style="width: 100%">
+          <td>
+            <table
+              align="center"
+              width="100%"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              role="presentation"
+              style="max-width: 86px"
+            >
+              <tbody>
+                <tr style="width: 100%">
+                  <td>
+                    <img
+                      src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/cancelledLogo.png"
+                      style="
+                        display: block;
+                        outline: none;
+                        border: none;
+                        text-decoration: none;
+                      "
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h1 style="font-size: 22px; font-weight: 700; text-align: center">
+              Annulation de votre réservation sur Cozytrip
+            </h1>
+            <h1 style="text-align: center; font-size: 18px; font-weight: 600">
+              Cher(e) voyageur/voyageuse,
+            </h1>
+            <p
+              style="
+                font-size: 17px;
+                line-height: 24px;
+                margin: 16px 0;
+                text-align: center;
+                color: #333333;
+              "
+            >
+              Nous vous confirmons par la présente l'annulation de votre
+              réservation sur Cozytrip. Voici les détails de votre annulation :
+            </p>
+            <table
+              align="center"
+              width="100%"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              role="presentation"
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <table
+                      align="center"
+                      width="100%"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      role="presentation"
+                    >
+                      <tbody style="width: 100%">
+                        <tr style="width: 100%">
+                          <td data-id="__react-email-column">
+                            <p
+                              style="
+                                font-size: 14px;
+                                line-height: 24px;
+                                margin: 16px 0;
+                                margin-bottom: 0px;
+                                margin-top: 10px;
+                              "
+                            >
+                              Nom de L&#x27;Hébergement
+                            </p>
+                          </td>
+                          <td data-id="__react-email-column">
+                            <p
+                              style="
+                                font-size: 14px;
+                                line-height: 24px;
+                                margin: 16px 0;
+                                text-align: right;
+                                font-weight: 600;
+                                color: #621fff;
+                                margin-bottom: 0px;
+                                margin-top: 10px;
+                              "
+                            >
+                            <%= data.title %>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      align="center"
+                      width="100%"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      role="presentation"
+                    >
+                      <tbody style="width: 100%">
+                        <tr style="width: 100%">
+                          <td data-id="__react-email-column">
+                            <p
+                              style="
+                                font-size: 14px;
+                                line-height: 24px;
+                                margin: 16px 0;
+                                margin-bottom: 0px;
+                                margin-top: 10px;
+                              "
+                            >
+                              Dates du séjour
+                            </p>
+                          </td>
+                          <td data-id="__react-email-column">
+                            <p
+                              style="
+                                font-size: 14px;
+                                line-height: 24px;
+                                margin: 16px 0;
+                                text-align: right;
+                                font-weight: 600;
+                                color: #621fff;
+                                margin-bottom: 0px;
+                                margin-top: 10px;
+                              "
+                            >
+                            <%= data.date_from %> - <%= data.date_to %>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      align="center"
+                      width="100%"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      role="presentation"
+                    >
+                      <tbody style="width: 100%">
+                        <tr style="width: 100%">
+                          <td data-id="__react-email-column">
+                            <p
+                              style="
+                                font-size: 14px;
+                                line-height: 24px;
+                                margin: 16px 0;
+                                margin-bottom: 0px;
+                                margin-top: 10px;
+                              "
+                            >
+                              Montant remboursé
+                            </p>
+                          </td>
+                          <td data-id="__react-email-column">
+                            <p
+                              style="
+                                font-size: 14px;
+                                line-height: 24px;
+                                margin: 16px 0;
+                                text-align: right;
+                                font-weight: 600;
+                                color: #621fff;
+                                margin-bottom: 0px;
+                                margin-top: 10px;
+                              "
+                            >
+                            <%= data.refunded_amount %>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      align="center"
+                      width="100%"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      role="presentation"
+                      style="margin-bottom: 60px"
+                    >
+                      <tbody style="width: 100%">
+                        <tr style="width: 100%">
+                          <td data-id="__react-email-column">
+                            <p
+                              style="
+                                font-size: 14px;
+                                line-height: 24px;
+                                margin: 16px 0;
+                                margin-bottom: 0px;
+                                margin-top: 10px;
+                              "
+                            >
+                              Mode de remboursement
+                            </p>
+                          </td>
+                          <td data-id="__react-email-column">
+                            <p
+                              style="
+                                font-size: 14px;
+                                line-height: 24px;
+                                margin: 16px 0;
+                                text-align: right;
+                                font-weight: 600;
+                                color: #621fff;
+                                margin-bottom: 0px;
+                                margin-top: 10px;
+                              "
+                            >
+                            <%= data.refund_type %>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table
+              align="center"
+              width="100%"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              role="presentation"
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <h1
+                      style="
+                        margin-top: 60px;
+                        font-weight: 700;
+                        font-size: 28px;
+                      "
+                    >
+                      Montant remboursé :
+                    </h1>
+                    <table
+                      align="center"
+                      width="100%"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      role="presentation"
+                    >
+                      <tbody style="width: 100%">
+                        <tr style="width: 100%">
+                          <p
+                            style="
+                              font-size: 17px;
+                              line-height: 24px;
+                              margin: 16px 0;
+                              color: #333333;
+                              margin-top: 8px;
+                            "
+                          >
+                            Nous avons procédé au remboursement du montant selon
+                            les conditions d'annulation de l'annonce et vos
+                            choix de remboursement. Le montant remboursé sera
+                            crédité sur le mode de paiement utilisé lors de la
+                            réservation dans un délai de [<span
+                              style="color: #fe7c48; font-weight: 600"
+                              >délai de traitement</span
+                            >]
+                          </p>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <hr
+              style="
+                width: 296px;
+                border: none;
+                border-top: 1px solid #eaeaea;
+                height: 1px;
+                border-color: #cccccc;
+                margin-top: 40px;
+                margin-bottom: 40px;
+              "
+            />
+            <table
+              align="center"
+              width="100%"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              role="presentation"
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <h1
+                      style="margin-top: 0px; font-weight: 700; font-size: 28px"
+                    >
+                      Confirmation :
+                    </h1>
+                    <table
+                      align="center"
+                      width="100%"
+                      border="0"
+                      cellpadding="0"
+                      cellspacing="0"
+                      role="presentation"
+                    >
+                      <tbody style="width: 100%">
+                        <tr style="width: 100%">
+                          <p
+                            style="
+                              font-size: 17px;
+                              line-height: 24px;
+                              margin: 16px 0;
+                              color: #333333;
+                              margin-top: 8px;
+                              margin-bottom: 2rem;
+                            "
+                          >
+                            Votre réservation a été annulée avec succès. Si vous
+                            avez des questions ou des préoccupations, n'hésitez
+                            pas à nous contacter à [
+                            <span style="color: #fe7c48; font-weight: 600"
+                              >adresse e-mail de support</span
+                            >].
+                          </p>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table
+      align="center"
+      width="100%"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      role="presentation"
+      style="
+        width: 100%;
+        border-top: 1px solid #cccccc;
+        background-color: #fafafa;
+      "
+    >
+      <tbody>
+        <tr>
+          <td>
+            <table
+              align="center"
+              width="100%"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              role="presentation"
+              style="max-width: 448px"
+            >
+              <tbody>
+                <tr style="width: 100%">
+                  <td>
+                    <p
+                      style="
+                        font-size: 14px;
+                        line-height: 24px;
+                        margin: 16px 0;
+                        text-align: center;
+                      "
+                    >
+                      Nous vous remercions de votre compréhension et espérons
+                      avoir l'occasion de vous accueillir lors d'un futur séjour
+                      sur Cozytrip.
+                    </p>
+                    <p
+                      style="
+                        font-size: 14px;
+                        line-height: 24px;
+                        margin: 16px 0;
+                        text-align: center;
+                        margin-bottom: 36px;
+                      "
+                    >
+                      Cordialement,
+                      <span style="font-weight: 600">
+                        L&#x27;équipe<span style="color: #621fff">
+                          Cozytrip</span
+                        ></span
+                      >
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div
+              style="
+                width: 288px;
+                height: 1px;
+                background-color: #cccccc;
+                margin: 0 auto;
+                margin-bottom: 40px;
+              "
+            ></div>
+            <table
+              align="center"
+              width="100%"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              role="presentation"
+              style="max-width: 448px"
+            >
+              <tbody>
+                <tr style="width: 100%">
+                  <td>
+                    <p
+                      style="
+                        font-size: 14px;
+                        line-height: 24px;
+                        margin: 16px 0;
+                        text-align: center;
+                      "
+                    >
+                      <span style="font-weight: 600">Note : </span>Cet e-mail
+                      est une notification automatique. Veuillez ne pas y
+                      répondre directement.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table
+              align="center"
+              width="100%"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              role="presentation"
+              style="max-width: 160px; margin: 0 auto; padding-bottom: 80px"
+            >
+              <tbody>
+                <tr style="width: 100%">
+                  <td>
+                    <a
+                      href="#"
+                      style="
+                        line-height: 100%;
+                        text-decoration: none;
+                        display: inline-block;
+                        max-width: 100%;
+                        margin-left: 40px;
+                        padding: 0px 0px 0px 0px;
+                      "
+                      target="_blank"
+                      ><span
+                        ><!--[if mso
+                          ]><i
+                            style="
+                              letter-spacing: 0px;
+                              mso-font-width: -100%;
+                              mso-text-raise: 0;
+                            "
+                            hidden
+                            >&nbsp;</i
+                          ><!
+                        [endif]--></span
+                      ><span
+                        style="
+                          max-width: 100%;
+                          display: inline-block;
+                          line-height: 120%;
+                          mso-padding-alt: 0px;
+                          mso-text-raise: 0;
+                        "
+                        ><img
+                          src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/facebook.png"
+                          style="
+                            display: block;
+                            outline: none;
+                            border: none;
+                            text-decoration: none;
+                          " /></span
+                      ><span
+                        ><!--[if mso
+                          ]><i
+                            style="letter-spacing: 0px; mso-font-width: -100%"
+                            hidden
+                            >&nbsp;</i
+                          ><!
+                        [endif]--></span
+                      ></a
+                    ><a
+                      href="#"
+                      style="
+                        line-height: 100%;
+                        text-decoration: none;
+                        display: inline-block;
+                        max-width: 100%;
+                        margin-left: 20px;
+                        padding: 0px 0px 0px 0px;
+                      "
+                      target="_blank"
+                      ><span
+                        ><!--[if mso
+                          ]><i
+                            style="
+                              letter-spacing: 0px;
+                              mso-font-width: -100%;
+                              mso-text-raise: 0;
+                            "
+                            hidden
+                            >&nbsp;</i
+                          ><!
+                        [endif]--></span
+                      ><span
+                        style="
+                          max-width: 100%;
+                          display: inline-block;
+                          line-height: 120%;
+                          mso-padding-alt: 0px;
+                          mso-text-raise: 0;
+                        "
+                        ><img
+                          src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/instagram.png"
+                          style="
+                            display: block;
+                            outline: none;
+                            border: none;
+                            text-decoration: none;
+                          " /></span
+                      ><span
+                        ><!--[if mso
+                          ]><i
+                            style="letter-spacing: 0px; mso-font-width: -100%"
+                            hidden
+                            >&nbsp;</i
+                          ><!
+                        [endif]--></span
+                      ></a
+                    ><a
+                      href="#"
+                      style="
+                        line-height: 100%;
+                        text-decoration: none;
+                        display: inline-block;
+                        max-width: 100%;
+                        margin-left: 20px;
+                        padding: 0px 0px 0px 0px;
+                      "
+                      target="_blank"
+                      ><span
+                        ><!--[if mso
+                          ]><i
+                            style="
+                              letter-spacing: 0px;
+                              mso-font-width: -100%;
+                              mso-text-raise: 0;
+                            "
+                            hidden
+                            >&nbsp;</i
+                          ><!
+                        [endif]--></span
+                      ><span
+                        style="
+                          max-width: 100%;
+                          display: inline-block;
+                          line-height: 120%;
+                          mso-padding-alt: 0px;
+                          mso-text-raise: 0;
+                        "
+                        ><img
+                          src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/x.png"
+                          style="
+                            display: block;
+                            outline: none;
+                            border: none;
+                            text-decoration: none;
+                          " /></span
+                      ><span
+                        ><!--[if mso
+                          ]><i
+                            style="letter-spacing: 0px; mso-font-width: -100%"
+                            hidden
+                            >&nbsp;</i
+                          ><!
+                        [endif]--></span
+                      ></a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
