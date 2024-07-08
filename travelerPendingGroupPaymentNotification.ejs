@@ -5,57 +5,49 @@
     <meta name="x-apple-disable-message-reformatting" />
     <style>
       @font-face {
-        font-family: 'Poppins';
+        font-family: "Poppins";
         font-style: normal;
         font-weight: 700;
-        mso-font-alt: 'Inter';
+        mso-font-alt: "Inter";
         src: url(https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/Poppins-Bold.ttf)
-          format('ttf');
+          format("ttf");
       }
 
       * {
-        font-family: 'Poppins', Inter;
+        font-family: "Poppins", Inter;
       }
     </style>
     <style>
       @font-face {
-        font-family: 'Poppins';
+        font-family: "Poppins";
         font-style: normal;
         font-weight: 600;
-        mso-font-alt: 'Verdana';
+        mso-font-alt: "Verdana";
         src: url(https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/Poppins-SemiBold.ttf)
-          format('ttf');
+          format("ttf");
       }
 
       * {
-        font-family: 'Poppins', Verdana;
+        font-family: "Poppins", Verdana;
       }
     </style>
     <style>
       @font-face {
-        font-family: 'Poppins';
+        font-family: "Poppins";
         font-style: normal;
         font-weight: 400;
-        mso-font-alt: 'Verdana';
+        mso-font-alt: "Verdana";
         src: url(https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/Poppins-Regular.ttf)
-          format('ttf');
+          format("ttf");
       }
 
       * {
-        font-family: 'Poppins', Verdana;
+        font-family: "Poppins", Verdana;
       }
     </style>
   </head>
 
-  <body
-    style="
-      width: 100%;
-      margin: 26px auto 0px auto;
-      max-width: 600px;
-      padding-right: 40px;
-      padding-left: 40px;
-    "
-  >
+  <body>
     <table
       align="center"
       width="100%"
@@ -63,14 +55,38 @@
       cellpadding="0"
       cellspacing="0"
       role="presentation"
-      style="max-width: 192px"
+      style="max-width: 600px; margin-left: auto; margin-right: auto"
     >
+    <tbody>
+       <tr>
+        <td>
+          <table
+          align="center"
+          width="100%"
+          border="0"
+          cellpadding="0"
+          cellspacing="0"
+          role="presentation"
+          style="
+            margin-left: 2.5rem;
+            margin-bottom: 2rem;
+            margin-top: 2.5rem;
+            margin-right: 2.5rem;
+          "
+          >
+
+         
       <tbody>
-        <tr style="width: 100%">
+        <tr >
           <td>
             <img
               src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/Logo.png"
-              style="display: block; outline: none; border: none; text-decoration: none"
+              style="
+                display: block;
+                outline: none;
+                border: none;
+                text-decoration: none;
+              "
             />
           </td>
         </tr>
@@ -110,7 +126,12 @@
                   <td>
                     <img
                       src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/exclamationMark.png"
-                      style="display: block; outline: none; border: none; text-decoration: none"
+                      style="
+                        display: block;
+                        outline: none;
+                        border: none;
+                        text-decoration: none;
+                      "
                     />
                   </td>
                 </tr>
@@ -119,7 +140,9 @@
             <h1 style="font-size: 22px; font-weight: 700; text-align: center">
               Paiement groupé en attente pour votre réservation
             </h1>
-            <h1 style="text-align: center; font-size: 18px; font-weight: 600">Bonjour à tous,</h1>
+            <h1 style="text-align: center; font-size: 18px; font-weight: 600">
+              Bonjour à tous,
+            </h1>
             <p
               style="
                 font-size: 17px;
@@ -129,8 +152,8 @@
                 color: #333333;
               "
             >
-              Nous vous contactons au sujet de la réservation en cours sur Cozytrip pour laquelle un
-              paiement groupé est en attente.
+              Nous vous contactons au sujet de la réservation en cours sur
+              Cozytrip pour laquelle un paiement groupé est en attente.
             </p>
             <hr
               style="
@@ -341,7 +364,13 @@
               <tbody>
                 <tr>
                   <td>
-                    <h1 style="font-size: 28px; font-weight: 700; margin-top: 40px">
+                    <h1
+                      style="
+                        font-size: 28px;
+                        font-weight: 700;
+                        margin-top: 40px;
+                      "
+                    >
                       Détails des voyageurs et des paiements :
                     </h1>
                     <table
@@ -366,22 +395,6 @@
                             >
                               <tbody style="width: 100%">
                                 <tr style="width: 100%">
-                                  <td
-                                    data-id="__react-email-column"
-                                    style="
-                                      font-weight: 600;
-                                      font-size: 12px;
-                                      text-align: center;
-                                      border: 1px solid #cccccc;
-                                      border-collapse: collapse;
-                                      padding-top: 4px;
-                                      padding-bottom: 4px;
-                                      width: 25%;
-                                      border-top-left-radius: 6px;
-                                    "
-                                  >
-                                    Voyageur
-                                  </td>
                                   <td
                                     data-id="__react-email-column"
                                     style="
@@ -432,75 +445,61 @@
                               </tbody>
                             </table>
                             <% data.arrayData.forEach(element => { %>
-                                <table
-                                align="center"
-                                width="100%"
-                                border="0"
-                                cellpadding="0"
-                                cellspacing="0"
-                                role="presentation"
-                              >
-                                <tbody style="width: 100%">
-                                  <tr style="width: 100%">
-                                    <td
-                                      data-id="__react-email-column"
-                                      style="
-                                        font-size: 11px;
-                                        text-align: center;
-                                        border: 1px solid #cccccc;
-                                        border-collapse: collapse;
-                                        padding-top: 4px;
-                                        padding-bottom: 4px;
-                                        width: 25%;
-                                      "
-                                    >
-                                      <%= element.email %>
-                                    </td>
-                                    <td
-                                      data-id="__react-email-column"
-                                      style="
-                                        font-size: 11px;
-                                        text-align: center;
-                                        border: 1px solid #cccccc;
-                                        border-collapse: collapse;
-                                        padding-top: 4px;
-                                        padding-bottom: 4px;
-                                        width: 25%;
-                                      "
-                                    >
+                            <table
+                              align="center"
+                              width="100%"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              role="presentation"
+                            >
+                              <tbody style="width: 100%">
+                                <tr style="width: 100%">
+                                  <td
+                                    data-id="__react-email-column"
+                                    style="
+                                      font-size: 11px;
+                                      text-align: center;
+                                      border: 1px solid #cccccc;
+                                      border-collapse: collapse;
+                                      padding-top: 4px;
+                                      padding-bottom: 4px;
+                                      width: 25%;
+                                    "
+                                  >
                                     <%= element.email %>
-                                    </td>
-                                    <td
-                                      data-id="__react-email-column"
-                                      style="
-                                        font-size: 11px;
-                                        text-align: center;
-                                        border: 1px solid #cccccc;
-                                        border-collapse: collapse;
-                                        padding-top: 4px;
-                                        padding-bottom: 4px;
-                                        width: 25%;
-                                      "
-                                    >
+                                  </td>
+                                  <td
+                                    data-id="__react-email-column"
+                                    style="
+                                      font-size: 11px;
+                                      text-align: center;
+                                      border: 1px solid #cccccc;
+                                      border-collapse: collapse;
+                                      padding-top: 4px;
+                                      padding-bottom: 4px;
+                                      width: 25%;
+                                    "
+                                  >
                                     <%= element.status %>
-                                    </td>
-                                    <td
-                                      data-id="__react-email-column"
-                                      style="
-                                        font-size: 11px;
-                                        text-align: center;
-                                        border: 1px solid #cccccc;
-                                        border-collapse: collapse;
-                                        padding-top: 4px;
-                                        padding-bottom: 4px;
-                                        width: 25%;
-                                      "
-                                    >
+                                  </td>
+                                  <td
+                                    data-id="__react-email-column"
+                                    style="
+                                      font-size: 11px;
+                                      text-align: center;
+                                      border: 1px solid #cccccc;
+                                      border-collapse: collapse;
+                                      padding-top: 4px;
+                                      padding-bottom: 4px;
+                                      width: 25%;
+                                    "
+                                  >
                                     <%= element.amount_to_pay %>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
                             <% }) %>
                           </td>
                         </tr>
@@ -526,9 +525,10 @@
                         text-align: justify;
                       "
                     >
-                      Le paiement groupé pour cette réservation est actuellement en attente.
-                      Veuillez prendre les mesures nécessaires pour effectuer le paiement dans les
-                      plus brefs délais afin de confirmer votre réservation.
+                      Le paiement groupé pour cette réservation est actuellement
+                      en attente. Veuillez prendre les mesures nécessaires pour
+                      effectuer le paiement dans les plus brefs délais afin de
+                      confirmer votre réservation.
                     </p>
                     <hr
                       style="
@@ -556,7 +556,13 @@
               <tbody>
                 <tr>
                   <td>
-                    <h1 style="margin-top: 40px; font-weight: 700; font-size: 28px">
+                    <h1
+                      style="
+                        margin-top: 40px;
+                        font-weight: 700;
+                        font-size: 28px;
+                      "
+                    >
                       Que faire ensuite ?
                     </h1>
                     <table
@@ -590,8 +596,8 @@
                               margin-top: 8px;
                             "
                           >
-                            Cliquez sur le lien ci-dessous pour accéder à la page de paiement et
-                            régler le montant dû.
+                            Cliquez sur le lien ci-dessous pour accéder à la
+                            page de paiement et régler le montant dû.
                           </p>
                         </tr>
                       </tbody>
@@ -628,8 +634,9 @@
                               margin-bottom: 40px;
                             "
                           >
-                            Assurez-vous que tous les membres du groupe sont informés de la
-                            situation et prêts à effectuer leur paiement.
+                            Assurez-vous que tous les membres du groupe sont
+                            informés de la situation et prêts à effectuer leur
+                            paiement.
                           </p>
                         </tr>
                       </tbody>
@@ -661,7 +668,11 @@
               cellpadding="0"
               cellspacing="0"
               role="presentation"
-              style="width: 100%; border-top: 1px solid #cccccc; background-color: #fafafa"
+              style="
+                width: 100%;
+                border-top: 1px solid #cccccc;
+                background-color: #fafafa;
+              "
             >
               <tbody>
                 <tr>
@@ -696,9 +707,12 @@
                                 text-align: center;
                               "
                             >
-                              Si vous rencontrez des difficultés pour effectuer le paiement ou si
-                              vous avez des questions, n&#x27;hésitez pas à contacter notre équipe
-                              de support à<span style="color: #fe7c48; font-weight: 600">
+                              Si vous rencontrez des difficultés pour effectuer
+                              le paiement ou si vous avez des questions,
+                              n&#x27;hésitez pas à contacter notre équipe de
+                              support à<span
+                                style="color: #fe7c48; font-weight: 600"
+                              >
                                 [adresse e-mail de support].</span
                               >
                             </p>
@@ -710,8 +724,9 @@
                                 text-align: center;
                               "
                             >
-                              Merci de votre coopération et de votre compréhension. Nous sommes
-                              impatients de vous accueillir pour votre séjour sur Cozytrip !
+                              Merci de votre coopération et de votre
+                              compréhension. Nous sommes impatients de vous
+                              accueillir pour votre séjour sur Cozytrip !
                             </p>
                             <p
                               style="
@@ -724,7 +739,9 @@
                             >
                               Cordialement,
                               <span style="font-weight: 600">
-                                L&#x27;équipe<span style="color: #621fff"> Cozytrip</span></span
+                                L&#x27;équipe<span style="color: #621fff">
+                                  Cozytrip</span
+                                ></span
                               >
                             </p>
                           </td>
@@ -760,8 +777,9 @@
                                 text-align: center;
                               "
                             >
-                              <span style="font-weight: 600">Note : </span>Cet e-mail est une
-                              notification automatique. Veuillez ne pas y répondre directement.
+                              <span style="font-weight: 600">Note : </span>Cet
+                              e-mail est une notification automatique. Veuillez
+                              ne pas y répondre directement.
                             </p>
                           </td>
                         </tr>
@@ -774,7 +792,11 @@
                       cellpadding="0"
                       cellspacing="0"
                       role="presentation"
-                      style="max-width: 160px; margin: 0 auto; padding-bottom: 80px"
+                      style="
+                        max-width: 160px;
+                        margin: 0 auto;
+                        padding-bottom: 80px;
+                      "
                     >
                       <tbody>
                         <tr style="width: 100%">
@@ -820,7 +842,12 @@
                                   " /></span
                               ><span
                                 ><!--[if mso
-                                  ]><i style="letter-spacing: 0px; mso-font-width: -100%" hidden
+                                  ]><i
+                                    style="
+                                      letter-spacing: 0px;
+                                      mso-font-width: -100%;
+                                    "
+                                    hidden
                                     >&nbsp;</i
                                   ><!
                                 [endif]--></span
@@ -866,7 +893,12 @@
                                   " /></span
                               ><span
                                 ><!--[if mso
-                                  ]><i style="letter-spacing: 0px; mso-font-width: -100%" hidden
+                                  ]><i
+                                    style="
+                                      letter-spacing: 0px;
+                                      mso-font-width: -100%;
+                                    "
+                                    hidden
                                     >&nbsp;</i
                                   ><!
                                 [endif]--></span
@@ -912,7 +944,12 @@
                                   " /></span
                               ><span
                                 ><!--[if mso
-                                  ]><i style="letter-spacing: 0px; mso-font-width: -100%" hidden
+                                  ]><i
+                                    style="
+                                      letter-spacing: 0px;
+                                      mso-font-width: -100%;
+                                    "
+                                    hidden
                                     >&nbsp;</i
                                   ><!
                                 [endif]--></span
@@ -930,5 +967,9 @@
         </tr>
       </tbody>
     </table>
+  </table>
+</td>
+</tr>
+</tbody>
   </body>
 </html>
