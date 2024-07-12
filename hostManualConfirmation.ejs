@@ -5,16 +5,16 @@
     <meta name="x-apple-disable-message-reformatting" />
     <style>
       @font-face {
-        font-family: 'Poppins';
+        font-family: "Poppins";
         font-style: normal;
         font-weight: 400;
-        mso-font-alt: 'Verdana';
+        mso-font-alt: "Verdana";
         src: url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap)
-          format('woff2');
+          format("woff2");
       }
 
       * {
-        font-family: 'Poppins', Verdana;
+        font-family: "Poppins", Verdana;
       }
     </style>
   </head>
@@ -69,7 +69,8 @@
                         max-width: 519px;
                       "
                     >
-                      Nouvelle demande de réservation en attente de votre confirmation
+                      Nouvelle demande de réservation en attente de votre
+                      confirmation
                     </p>
                     <h1
                       style="
@@ -91,8 +92,8 @@
                         margin-bottom: 48px;
                       "
                     >
-                      Nous sommes heureux de vous informer que vous avez une nouvelle réservation
-                      confirmée instantanément !
+                      Nous sommes heureux de vous informer que vous avez une
+                      nouvelle réservation confirmée instantanément !
                     </p>
                     <table
                       align="center"
@@ -172,10 +173,14 @@
                                         color: #777777;
                                       "
                                     >
-                                      <%= data.address %>, <%= data.first_name %>
+                                      <%= data.address %>, <%= data.first_name
+                                      %>
                                     </p>
                                   </td>
-                                  <td data-id="__react-email-column" style="margin-left: 2.5rem">
+                                  <td
+                                    data-id="__react-email-column"
+                                    style="margin-left: 2.5rem"
+                                  >
                                     <img
                                       src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/sign.png"
                                       style="
@@ -194,7 +199,7 @@
                       </tbody>
                     </table>
                     <table
-                      align="center"
+                      align="start"
                       width="100%"
                       border="0"
                       cellpadding="0"
@@ -205,9 +210,11 @@
                       <tbody>
                         <tr>
                           <td>
-                            <h1 style="margin: 0px; font-size: 28px">Voyageur</h1>
+                            <h1 style="margin: 0px; font-size: 28px">
+                              Voyageur
+                            </h1>
                             <table
-                              align="center"
+                              align="start"
                               width="100%"
                               border="0"
                               cellpadding="0"
@@ -264,11 +271,17 @@
               <tbody>
                 <tr style="width: 100%">
                   <td>
-                    <h1 style="font-family: Inter, sans-serif; font-size: 28px; font-weight: 700">
+                    <h1
+                      style="
+                        font-family: Inter, sans-serif;
+                        font-size: 28px;
+                        font-weight: 700;
+                      "
+                    >
                       Dates du séjour
                     </h1>
                     <table
-                      align="center"
+                      align="start"
                       width="100%"
                       border="0"
                       cellpadding="0"
@@ -283,13 +296,13 @@
                             style="
                               border: 1px solid #cccccc;
                               border-radius: 8px;
-                              margin-right: 40px;
+                              margin-right: 20rem;
                               max-height: 131px;
-                              width: 200px;
+                              min-width: 200px;
                             "
                           >
                             <table
-                              align="center"
+                              align="start"
                               width="100%"
                               border="0"
                               cellpadding="0"
@@ -356,19 +369,22 @@
                               </tbody>
                             </table>
                           </td>
-                          <td data-id="__react-email-column" style="color: white"></td>
+                          <td
+                            data-id="__react-email-column"
+                            style="width: 200px"
+                          ></td>
                           <td
                             data-id="__react-email-column"
                             style="
                               border: 1px solid #cccccc;
                               border-radius: 8px;
-                              margin-left: 50px;
+                              margin-left: 16rem;
                               max-height: 131px;
-                              width: 200px;
+                              min-width: 200px;
                             "
                           >
                             <table
-                              align="center"
+                              align="start"
                               width="100%"
                               border="0"
                               cellpadding="0"
@@ -391,7 +407,7 @@
                                         padding-left: 12px;
                                       "
                                     >
-                                      <span>Départ</span>
+                                      <span>Départ :</span>
                                     </p>
                                   </td>
                                 </tr>
@@ -466,7 +482,9 @@
               <tbody>
                 <tr>
                   <td>
-                    <h1 style="margin: 0px; font-size: 28px">Message du Voyageur</h1>
+                    <h1 style="margin: 0px; font-size: 28px">
+                      Message du Voyageur
+                    </h1>
                     <table
                       align="center"
                       width="100%"
@@ -521,8 +539,8 @@
                 margin-right: auto;
               "
             >
-              Pour Consulter les détails complets de votre réservation, cliquez sur le lien
-              ci-dessous :
+              Pour Consulter les détails complets de votre réservation, cliquez
+              sur le lien ci-dessous :
             </p>
             <hr
               style="
@@ -561,7 +579,13 @@
               target="_blank"
               ><span
                 ><!--[if mso
-                  ]><i style="letter-spacing: 0px; mso-font-width: -100%; mso-text-raise: 24" hidden
+                  ]><i
+                    style="
+                      letter-spacing: 0px;
+                      mso-font-width: -100%;
+                      mso-text-raise: 24;
+                    "
+                    hidden
                     >&nbsp;</i
                   ><!
                 [endif]--></span
@@ -576,7 +600,9 @@
                 >Voir et confirmer la réservation</span
               ><span
                 ><!--[if mso
-                  ]><i style="letter-spacing: 0px; mso-font-width: -100%" hidden>&nbsp;</i><!
+                  ]><i style="letter-spacing: 0px; mso-font-width: -100%" hidden
+                    >&nbsp;</i
+                  ><!
                 [endif]--></span
               ></a
             >
@@ -629,7 +655,8 @@
                 margin-bottom: 0px;
               "
             >
-              Assurez-vous que les dates et les informations correspondent à vos disponibilités.
+              Assurez-vous que les dates et les informations correspondent à vos
+              disponibilités.
             </p>
             <h1
               style="
@@ -657,8 +684,8 @@
                 margin-bottom: 0px;
               "
             >
-              Si vous avez des questions ou des préoccupations, utilisez notre messagerie intégrée
-              pour contacter le voyageur.
+              Si vous avez des questions ou des préoccupations, utilisez notre
+              messagerie intégrée pour contacter le voyageur.
             </p>
             <h1
               style="
@@ -686,8 +713,8 @@
                 margin-bottom: 0px;
               "
             >
-              Vous pouvez confirmer ou refuser cette demande directement depuis la plateforme
-              Cozytrip.
+              Vous pouvez confirmer ou refuser cette demande directement depuis
+              la plateforme Cozytrip.
             </p>
             <table
               align="center"
@@ -739,9 +766,14 @@
                                 text-align: center;
                               "
                             >
-                              Si vous avez des questions ou des préoccupations, notre équipe de
-                              support est là pour vous aider. Contactez-nous à <span
-                                style="color: rgb(254, 124, 72); font-weight: 600"
+                              Si vous avez des questions ou des préoccupations,
+                              notre équipe de support est là pour vous aider.
+                              Contactez-nous à
+                              <span
+                                style="
+                                  color: rgb(254, 124, 72);
+                                  font-weight: 600;
+                                "
                                 >support@cozytrip.com</span
                               >.
                             </p>
@@ -757,8 +789,9 @@
                                 max-width: 448px;
                               "
                             >
-                              Merci d&#x27;avoir choisi Cozytrip pour accueillir des voyageurs. Nous
-                              vous souhaitons une excellente collaboration !
+                              Merci d&#x27;avoir choisi Cozytrip pour accueillir
+                              des voyageurs. Nous vous souhaitons une excellente
+                              collaboration !
                             </p>
                             <hr
                               style="
@@ -781,8 +814,9 @@
                                 text-align: center;
                               "
                             >
-                              <b>Note</b> : Cet e-mail est une notification automatique. Veuillez ne
-                              pas y répondre directement.
+                              <b>Note</b> : Cet e-mail est une notification
+                              automatique. Veuillez ne pas y répondre
+                              directement.
                             </p>
                           </td>
                         </tr>
@@ -795,7 +829,11 @@
                       cellpadding="0"
                       cellspacing="0"
                       role="presentation"
-                      style="max-width: 160px; margin: 0 auto; padding-bottom: 80px"
+                      style="
+                        max-width: 160px;
+                        margin: 0 auto;
+                        padding-bottom: 80px;
+                      "
                     >
                       <tbody>
                         <tr style="width: 100%">
@@ -841,7 +879,12 @@
                                   " /></span
                               ><span
                                 ><!--[if mso
-                                  ]><i style="letter-spacing: 0px; mso-font-width: -100%" hidden
+                                  ]><i
+                                    style="
+                                      letter-spacing: 0px;
+                                      mso-font-width: -100%;
+                                    "
+                                    hidden
                                     >&nbsp;</i
                                   ><!
                                 [endif]--></span
@@ -887,7 +930,12 @@
                                   " /></span
                               ><span
                                 ><!--[if mso
-                                  ]><i style="letter-spacing: 0px; mso-font-width: -100%" hidden
+                                  ]><i
+                                    style="
+                                      letter-spacing: 0px;
+                                      mso-font-width: -100%;
+                                    "
+                                    hidden
                                     >&nbsp;</i
                                   ><!
                                 [endif]--></span
@@ -933,7 +981,12 @@
                                   " /></span
                               ><span
                                 ><!--[if mso
-                                  ]><i style="letter-spacing: 0px; mso-font-width: -100%" hidden
+                                  ]><i
+                                    style="
+                                      letter-spacing: 0px;
+                                      mso-font-width: -100%;
+                                    "
+                                    hidden
                                     >&nbsp;</i
                                   ><!
                                 [endif]--></span
