@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ordre de Versement</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", "sans-serif";
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* background-color: #f8f9fa; */
+        color: #333;
+      }
+      .container {
+        margin: 2rem;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .header h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+      }
+      .header span {
+        margin-left: 5rem;
+      }
+      .line {
+        height: 3px;
+        background-color: black;
+        margin-top: 1.5rem;
+      }
+      .line_inside {
+        height: 3px;
+        background-color: black;
+        margin: 0;
+      }
+      .main {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .main_header {
+        display: flex;
+        width: 50%;
+      }
+      .main_info {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 1rem;
+      }
+      .label {
+        font-weight: bold;
+      }
+      .value {
+        margin-left: 10px;
+      }
+      .hero {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+      }
+      .hero_info {
+        width: 50%;
+        margin-left: 10px;
+      }
+      .prix {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      .footer p {
+        color: #777;
+        max-width: 400px;
+      }
+      .footer_info {
+        font-size: 3rem;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+      }
+      .footer_info p {
+        color: black;
+        font-weight: bold;
+        line-height: 3rem;
+      }
+      .footer_info span {
+        color: #621fff;
+      }
+      @media (max-width: 600px) {
+        .container {
+          padding: 10px;
+        }
+        .section {
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/logoSvg.svg"
+          alt=""
+        />
+        <div>
+          <h1>
+            Ordre de <br />
+            Versement
+          </h1>
+          <span>Ordre #: 123</span>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="main">
+        <div class="main_header">
+          <span class="label">VERSER À :</span>
+        </div>
+        <div class="main_info">
+          <span class="value"
+            ><span class="label">Client/Hôte :</span> Faïd Boukal</span
+          >
+          <span class="value">
+            <span class="label">Email:</span> Faïdb@gmail.com</span
+          >
+          <span class="value"> <span class="label">Société :</span> N/A </span>
+          <div class="line_inside"></div>
+          <span class="value"><span class="label">Ordre #:</span> N/A</span>
+          <span class="value">
+            <span class="label">Date d’acceptation:</span> 3/02/2024
+          </span>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="main">
+        <div class="main_header">
+          <span class="label">COMPTE BANCAIRE :</span>
+        </div>
+        <div class="main_info">
+          <span class="value"
+            ><span class="label">Date de paiement prévue :</span>
+            15/02/2024</span
+          >
+          <span class="value">
+            <span class="label">Bank Name :</span> centrale populaire</span
+          >
+          <span class="value">
+            <span class="label">Account Name :</span> Faid Boukal
+          </span>
+          <span class="value"> <span class="label">IBAN :</span>N/A </span>
+          <span class="value"> <span class="label">BIC</span> N/A </span>
+        </div>
+      </div>
+
+      <div class="line"></div>
+      <div class="hero">
+        <div class="hero_info">
+          <span class="label">MONTANT VERSÉ</span>
+        </div>
+        <div class="hero_info">
+          <span class="prix">140 € TTC</span>
+        </div>
+      </div>
+
+      <div class="line"></div>
+      <div class="footer">
+        <p>
+          Veuillez contacter support@cozytrip.com pour d'autres modes de
+          paiement.
+        </p>
+        <div class="footer_info">
+          <p>
+            Book a dreamy <br />
+            trip with
+            <span
+              >friends <br />
+              and family.</span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
