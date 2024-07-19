@@ -5,16 +5,16 @@
     <meta name="x-apple-disable-message-reformatting" />
     <style>
       @font-face {
-        font-family: "Poppins";
+        font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
-        mso-font-alt: "Verdana";
+        mso-font-alt: 'Verdana';
         src: url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap)
-          format("woff2");
+          format('woff2');
       }
 
       * {
-        font-family: "Poppins", Verdana;
+        font-family: 'Poppins', Verdana;
       }
     </style>
   </head>
@@ -105,7 +105,7 @@
                         margin-top: 48px;
                       "
                     >
-                      Cher(e) [hote],
+                      Cher <%= data.hostName %>,
                     </h1>
                     <p
                       style="
@@ -117,9 +117,9 @@
                         margin-bottom: 0px;
                       "
                     >
-                      Nous vous contactons pour vous informer que votre demande
-                      de versement peut être acceptée ou refusée. Veuillez
-                      vérifier le statut ci-dessous pour connaître le résultat.
+                      Nous vous contactons pour vous informer que votre demande de versement peut
+                      être acceptée ou refusée. Veuillez vérifier le statut ci-dessous pour
+                      connaître le résultat.
                     </p>
                     <table
                       align="start"
@@ -148,9 +148,7 @@
                       <tbody>
                         <tr>
                           <td>
-                            <h1 style="margin: 0px; font-size: 28px">
-                              Statut de versement
-                            </h1>
+                            <h1 style="margin: 0px; font-size: 28px">Statut de versement</h1>
                             <table
                               align="start"
                               width="100%"
@@ -173,7 +171,7 @@
                                         margin-bottom: 2rem;
                                       "
                                     >
-                                      [statut de versement]
+                                      <%= data.status %>
                                     </p>
                                   </td>
                                 </tr>
@@ -225,12 +223,7 @@
                                 >Voir votre paiement</span
                               ><span
                                 ><!--[if mso
-                                  ]><i
-                                    style="
-                                      letter-spacing: 0px;
-                                      mso-font-width: -100%;
-                                    "
-                                    hidden
+                                  ]><i style="letter-spacing: 0px; mso-font-width: -100%" hidden
                                     >&nbsp;</i
                                   ><!
                                 [endif]--></span
@@ -327,10 +320,9 @@
                 margin-bottom: 60px;
               "
             >
-              Si vous avez des questions ou avez besoin d'aide, n'hésitez pas à
-              contacter notre service clientèle à
-              <span style="color: #fe7c48">[adresse e-mail de support]</span> ou
-              via notre site Web.
+              Si vous avez des questions ou avez besoin d'aide, n'hésitez pas à contacter notre
+              service clientèle à
+              <span style="color: #fe7c48">[adresse e-mail de support]</span> ou via notre site Web.
             </p>
 
             <table
@@ -379,21 +371,14 @@
                               cellpadding="0"
                               cellspacing="0"
                               role="presentation"
-                              style="
-                                display: inline;
-                                margin-left: 15rem;
-                                width: 20px;
-                              "
+                              style="display: inline; margin-left: 15rem; width: 20px"
                             >
                               <tbody>
                                 <tr>
                                   <td>
                                     <a
                                       href="#"
-                                      style="
-                                        color: #067df7;
-                                        text-decoration: none;
-                                      "
+                                      style="color: #067df7; text-decoration: none"
                                       target="_blank"
                                       ><img
                                         src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/facebook.png"
@@ -405,10 +390,7 @@
                                         " /></a
                                     ><a
                                       href="#"
-                                      style="
-                                        color: #067df7;
-                                        text-decoration: none;
-                                      "
+                                      style="color: #067df7; text-decoration: none"
                                       target="_blank"
                                       ><img
                                         src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/instagram.png"
@@ -422,10 +404,7 @@
                                         " /></a
                                     ><a
                                       href="#"
-                                      style="
-                                        color: #067df7;
-                                        text-decoration: none;
-                                      "
+                                      style="color: #067df7; text-decoration: none"
                                       target="_blank"
                                       ><img
                                         src="https://cozytrip-static-assets.s3.eu-north-1.amazonaws.com/x.png"
@@ -467,10 +446,9 @@
                                 text-align: center;
                               "
                             >
-                              Merci d&#x27;avoir choisi Cozytrip pour partager
-                              votre hébergement avec les voyageurs du monde
-                              entier. Nous sommes là pour vous aider à réussir
-                              dans votre aventure d&#x27;hôte !
+                              Merci d&#x27;avoir choisi Cozytrip pour partager votre hébergement
+                              avec les voyageurs du monde entier. Nous sommes là pour vous aider à
+                              réussir dans votre aventure d&#x27;hôte !
                             </p>
                             <p
                               style="
@@ -508,9 +486,8 @@
                                 text-align: center;
                               "
                             >
-                              <b>Note</b> : Cet e-mail est une notification
-                              automatique. Veuillez ne pas y répondre
-                              directement.
+                              <b>Note</b> : Cet e-mail est une notification automatique. Veuillez ne
+                              pas y répondre directement.
                             </p>
                           </td>
                         </tr>
