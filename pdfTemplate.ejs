@@ -15,7 +15,7 @@
         padding: 0;
         box-sizing: border-box;
         /* background-color: #f8f9fa; */
-        color: #333;
+        color: black;
       }
       .container {
         margin: 2rem;
@@ -31,11 +31,20 @@
       }
 
       .header h1 {
-        font-size: 3rem;
-        line-height: 3rem;
+        font-size: 2rem;
+        line-height: 0.5rem;
+        color: black;
+      }
+      .header h2 {
+        font-size: 2rem;
+        line-height: 0.5rem;
+        margin-left: 2rem;
+        color: black;
       }
       .header span {
         margin-left: 5rem;
+        margin-top: 20rem;
+        font-size: 0.9rem;
       }
       .line {
         height: 3px;
@@ -67,6 +76,7 @@
       }
       .value {
         margin-left: 10px;
+        font-size: 1rem;
       }
       .hero {
         display: flex;
@@ -117,14 +127,13 @@
           alt=""
         />
         <div>
-          <h1>
-            Ordre de <br />
-            Versement
-          </h1>
+          <h2>Ordre de</h2>
+          <h1>Versement</h1>
+
           <span>Ordre #: 123</span>
         </div>
       </div>
-      <div class="line"></div>
+      <hr class="line" />
       <div class="main">
         <div class="main_header">
           <span class="label">VERSER À :</span>
@@ -137,14 +146,15 @@
             <span class="label">Email:</span> <%= data.email %></span
           >
           <span class="value"> <span class="label">Société :</span> N/A </span>
-          <div class="line_inside"></div>
+          <hr class="line_inside" />
           <span class="value"><span class="label">Ordre #:</span> N/A</span>
           <span class="value">
-            <span class="label">Date d’acceptation:</span> <%= data.acceptedDate %>
+            <span class="label">Date d’acceptation:</span> <%= data.acceptedDate
+            %>
           </span>
         </div>
       </div>
-      <div class="line"></div>
+      <hr class="line" />
       <div class="main">
         <div class="main_header">
           <span class="label">COMPTE BANCAIRE :</span>
@@ -160,12 +170,17 @@
           <span class="value">
             <span class="label">Account Name :</span> <%= data.client %>
           </span>
-          <span class="value"> <span class="label">IBAN :</span><%= data.iban %> </span>
-          <span class="value"> <span class="label">BIC</span> <%= data.swiftCode %> </span>
+          <span class="value">
+            <span class="label">IBAN :</span><%= data.iban %>
+          </span>
+          <span class="value">
+            <span class="label">BIC</span> <%= data.swiftCode %>
+          </span>
         </div>
       </div>
 
-      <div class="line"></div>
+      <hr class="line" />
+
       <div class="hero">
         <div class="hero_info">
           <span class="label">MONTANT VERSÉ</span>
@@ -175,7 +190,8 @@
         </div>
       </div>
 
-      <div class="line"></div>
+      <hr class="line" />
+
       <div class="footer">
         <p>
           Veuillez contacter support@cozytrip.com pour d'autres modes de
