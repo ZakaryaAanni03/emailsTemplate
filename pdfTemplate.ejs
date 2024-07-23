@@ -164,12 +164,11 @@
           <span class="value">
             <span class="label">Email:</span> <%= data.email %></span
           >
-          <span class="value"> <span class="label">Société :</span> N/A </span>
+          <span class="value"> <span class="label">Société :</span> <%= data.company %></span>
           <hr class="line_inside" />
           <span class="value"><span class="label">Ordre #:</span> N/A</span>
           <span class="value">
-            <span class="label">Date d’acceptation:</span> <%= data.acceptedDate
-            %>
+            <span class="label">Date d’acceptation:</span> <%= data.acceptedDate %>
           </span>
         </div>
       </div>
@@ -181,7 +180,7 @@
         <div class="main_info">
           <span class="value"
             ><span class="label">Date de paiement prévue :</span>
-            15/02/2024</span
+            <%= data.acceptedDate %></span
           >
           <span class="value">
             <span class="label">Bank Name :</span> <%= data.bankName %></span
@@ -193,7 +192,7 @@
             <span class="label">IBAN :</span><%= data.iban %>
           </span>
           <span class="value">
-            <span class="label">BIC</span> <%= data.swiftCode %>
+            <span class="label">BIC :</span> <%= data.swiftCode %>
           </span>
         </div>
       </div>
